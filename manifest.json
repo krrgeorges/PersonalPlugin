@@ -5,8 +5,8 @@
 	"description":"Personal Chrome Plugin encapsulating my needs",
 	"content_scripts":[{
 		"js":["content.js"],
-		"matches":["*://www.linkedin.com/*","*://github.com/*"]
+		"matches":["<all_urls>"]
 	}],
 	"background":{"scripts":["background.js"]},
-	"permissions":["tabs","webRequest","webRequestBlocking","*://www.linkedin.com/*"]
+	"permissions":["tabs","webRequest","webRequestBlocking","*://www.linkedin.com/*","storage"]
 }
