@@ -29,6 +29,9 @@ if(window.location.host.indexOf(hosts[0]) >= 0){
 		}
 
 	}
+	if(document.getElementsByClassName("global-nav__primary-link").length > 0){
+		document.getElementsByClassName("global-nav__primary-link")[0].remove();
+	}
 	if(document.getElementsByClassName("global-nav__primary-item").length > 0){
 		document.getElementsByClassName("global-nav__primary-item")[0].remove();
 	}
