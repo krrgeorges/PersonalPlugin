@@ -1,5 +1,29 @@
 $(document).ready(function(){
 	add_ui_links();
+	CKEDITOR.on('instanceCreated', function(e) {
+	    e.editor.on('change', function (event) {
+	        if(event.editor.name == "notes"){
+	        	chrome.storage.local.set({"tabnotes":CKEDITOR.instances.notes.getData()},function(){
+	        		console.log("Tabnotes written")
+	        	});
+	        }
+	    });
+	}); 
+	CKEDITOR.on('instanceReady',function(){
+		$(".cke_top").remove()
+	})
+	CKEDITOR.replace('notes');
+	chrome.storage.local.get("tabnotes",function(result){
+		console.log(result.tabnotes)
+		if(result.tabnotes == undefined){
+			chrome.storage.local.set({"tabnotes":""},function(){
+				CKEDITOR.instances.notes.setData('')
+			})
+		}
+		else{
+			CKEDITOR.instances.notes.setData(result.tabnotes);
+		}
+	})
 	$("#add-tab-link").click(function(){
 		add_link($("#tab-link-input").val().trim());
 	})

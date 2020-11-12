@@ -45,14 +45,16 @@ if(window.location.host.indexOf(hosts[1]) >= 0){
 	if(href.indexOf("?") >= 0){
 		href = href.substring(0,href.indexOf("?"))
 	}
-	if(href.substring(href.lastIndexOf("/")+1,href.length) == document.getElementsByClassName("vcard-username")[0].textContent.trim()){
-		console.log("Profile Page Detected - Github")
-		nav_items = document.getElementsByClassName("UnderlineNav-item")
-		for(var i=0;i<=nav_items.length-1;i++){
-			if(nav_items[i].classList.contains("selected") == true){
-				if(nav_items[i].textContent.trim() == "Overview"){
-					window.location.href = href+"?tab=repositories"
-					break;
+	if(document.getElementsByClassName("vcard-username").length > 0){
+		if(href.substring(href.lastIndexOf("/")+1,href.length) == document.getElementsByClassName("vcard-username")[0].textContent.trim()){
+			console.log("Profile Page Detected - Github")
+			nav_items = document.getElementsByClassName("UnderlineNav-item")
+			for(var i=0;i<=nav_items.length-1;i++){
+				if(nav_items[i].classList.contains("selected") == true){
+					if(nav_items[i].textContent.trim() == "Overview"){
+						window.location.href = href+"?tab=repositories"
+						break;
+					}
 				}
 			}
 		}
