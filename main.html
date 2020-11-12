@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+    <script src="./jquery.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <style type="text/css">
+        *{
+            background-color: #2C3E50;
+            color:white;
+            font-family: 'Source Code Pro',"Consolas";
+        }
+        .active{
+            color:#2C3E50!important;
+        }
+        nav{
+            border-bottom: 2px solid white;
+        }
+        .nav-item{
+            background-color: #2C3E50!important;color:white!important;
+            border: none;
+            font-weight: bold;
+        }
+        .nav-link{border: none!important;}
+        #tab-link-container{
+            margin-top: 15px;
+        }
+        .tab-link-item{
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;       
+            background-color:#117A65;border-radius: 14px;color:white;
+            margin-bottom: 15px;
+        }
+        .tab-link-item a{
+            color:white;
+        }
+        .col-md-12-spec{
+            padding-right: 0px!important;
+            padding-left: 0px!important;
+        }
+    </style>
+</head>
+<body style="width:500px;">
+
+    <div class="col-md-12">
+        <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-daytabs-tab" data-toggle="tab" href="#nav-daytabs" role="tab" aria-controls="nav-daytabs" aria-selected="true">Set DayTabs</a>
+<!--                 <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Project Tab 2</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Project Tab 3</a> -->
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent" style="margin-top: 15px;">
+            <div class="tab-pane fade show active" id="nav-daytabs" role="tabpanel" aria-labelledby="nav-daytabs-tab">
+                <input type="text" class="form-control" name="tab-link" id='tab-link-input' pOlaceholder="Enter tab link">
+                <button class="btn" style="width: 100%;background-color:#2ECC71;" id ='add-tab-link'>Add Tab</button>
+                <div class="col-md-12 col-md-12-spec" id="tab-link-container">
+                    
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
