@@ -27,6 +27,11 @@ $(document).ready(function(){
 	$("#add-tab-link").click(function(){
 		add_link($("#tab-link-input").val().trim());
 	})
+	$("#add-ps-link").click(function(){
+		chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
+		    add_link(tabs[0].url);
+		});
+	})
 	$("#tab-link-input").keypress(function(e){
 		if(e.which == 13){
 			add_link($("#tab-link-input").val().trim());
