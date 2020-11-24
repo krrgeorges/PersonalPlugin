@@ -1,4 +1,4 @@
-hosts = ["linkedin.com","github.com"]
+hosts = ["linkedin.com","github.com","glassdoor.co.in"]
 
 var old_ll_ss = ["https://static-exp1.licdn.com/sc/h/br/zfa70dr0xahr65p72dyuh2iq", "https://static-exp1.licdn.com/sc/h/br/144dygk0mpvy8dmfd0ab3guw2", "https://static-exp1.licdn.com/sc/h/br/784awsl7p8v39gae3szngzqpc", "https://static-exp1.licdn.com/sc/h/br/atutc04ofkoqcu4o2ihbsh5ti", "https://static-exp1.licdn.com/sc/h/br/7hac4jjj1ty9tqbswq46h2sed", "https://static-exp1.licdn.com/sc/h/br/4t43daj0en1j4fq745ehqqx3o", "https://static-exp1.licdn.com/sc/h/br/eoinzopz5vzximh9bxh4ou3ec", "https://static-exp1.licdn.com/sc/h/br/10ng5dj36b7muycly0rgu8xxt", "https://static-exp1.licdn.com/sc/h/br/6qy38w0ghcdow4ewegmxoor1b", "https://static-exp1.licdn.com/sc/h/br/8p5n9z2umb2colc2pimdy02c6", "https://static-exp1.licdn.com/sc/h/br/3xemm7ckiw16y6ytp0yprj61d", "https://static-exp1.licdn.com/sc/h/br/4ude7ry71hld55ckzemowgw5c", "https://static-exp1.licdn.com/sc/h/br/1eusa9u1l6npjjusyzdojji50", "https://static-exp1.licdn.com/sc/h/br/2xutddnvxwl9prma16xx4gk5e", "https://static-exp1.licdn.com/sc/h/br/ecg34at02131p39kunrt7bwxm", "https://static-exp1.licdn.com/sc/h/br/2oan33dtjl5iyc3kzzts8gkty", "https://static-exp1.licdn.com/sc/h/br/73nnl3n5ffp1heneyn8bpjt2z", "https://static-exp1.licdn.com/sc/h/br/bi3jmvaduc3iowkr8iutrq0bi", "https://static-exp1.licdn.com/sc/h/br/3gcs6yta8i26gb7vuuibq3oj9", "data:text/css;charset=utf-8;base64,QGNoYXJzZXQgICA…gICAgICBtYXJnaW4tbGVmdDogIDEwNXB4OwogICAgICAgfSA=", "https://static-exp1.licdn.com/sc/h/br/7zoioh3hzc76n91id19tp5p6p", "https://static-exp1.licdn.com/sc/h/br/880lbfepv3tliohrq7v73swby", "https://static-exp1.licdn.com/sc/h/br/7o3oto5yr3mkurtj4myt9wjiv", "https://static-exp1.licdn.com/sc/h/br/5utrhz2tcfc09sym2mrterh3q", "https://static-exp1.licdn.com/sc/h/br/4cauav0qxbky6by9aavsndhyz", "https://static-exp1.licdn.com/sc/h/br/4eurwbn980liykqwun156zkzq", "https://static-exp1.licdn.com/sc/h/br/55e7wqtub3tqffwv77pqg3p3l"]
 var old_ll_js = [["https://platform.linkedin.com/litms/vendor/google/gtag-adwords.js?id=AW-867846157","text/javascript"],["https://platform.linkedin.com/js/analytics.js",""],["","application/javascript"],["https://static-exp1.licdn.com/sc/h/br/40nkwms0jpasv7yh3fxgj2zju",""],["https://static-exp1.licdn.com/sc/h/br/4h83hduf4oo0s0zbc04trlbhq",""],["https://static-exp1.licdn.com/sc/h/br/ci1xr0ddl1k1zkhnzv7qp4ynf",""],["https://static-exp1.licdn.com/sc/h/br/84xf15h2rup5sqqh7f0rr970t",""],["https://static-exp1.licdn.com/sc/h/br/9np5v85kti7wfwsrcqh2pgpc1",""],["https://static-exp1.licdn.com/sc/h/br/4oeiudlcvpiishds2fbyff6xy",""],["https://static-exp1.licdn.com/sc/h/br/4fca0rw9m2k3vbwx8kq2zmiue",""],["https://static-exp1.licdn.com/sc/h/br/camr3uab8z2et4nj2mblxafb2",""],["https://static-exp1.licdn.com/sc/h/br/10eea3ipflhgxf9r9gqqy29ld",""],["https://static-exp1.licdn.com/sc/h/br/9nblzu6rofyizrk18vuuu2ms5",""],["https://static-exp1.licdn.com/sc/h/br/7j9zglhx8ut39z2yi35zkb1oe",""],["https://static-exp1.licdn.com/sc/h/br/8cdy8w8l6bd1o8a4g0jiwyuw8",""],["https://static-exp1.licdn.com/sc/h/br/11kf1aozyl0teww4vkmt9wd65",""],["https://static-exp1.licdn.com/sc/h/br/coa7f3ykpl4n59lxspa6n42h5",""],["https://static-exp1.licdn.com/sc/h/br/e10piz34e4rybecba7ht33vzz",""],["https://static-exp1.licdn.com/sc/h/br/aoqdl7juodon8gbr6ou2273l7",""],["https://static-exp1.licdn.com/sc/h/br/1k3cmoe6tr7hyq64aaq7lu0sj",""],["https://static-exp1.licdn.com/sc/h/br/1sreld711wp7gtpiu03wvcd1k",""],["https://static-exp1.licdn.com/sc/h/br/bq482m4iexs2t2bvyc169h15g",""],["https://static-exp1.licdn.com/sc/h/br/7iquqtodkwjsyrpjc8kumhpvb",""],["https://static-exp1.licdn.com/sc/h/br/7nj10tlbxxa8hy73qtw7g4x0i",""],["https://static-exp1.licdn.com/sc/h/br/enis1ncj701lj8r1evpoo0o6q",""],["https://platform.linkedin.com/litms/utag/voyager-web-feed/utag.js?cb=1605072300000","text/javascript"],["file://platform.linkedin.com/litms/utag/voyager-web-feed/utag.121.js?utv=ut4.46.202009172011","text/javascript"],["file://platform.linkedin.com/litms/utag/voyager-web-feed/utag.128.js?utv=ut4.46.202009172011","text/javascript"],["file://platform.linkedin.com/litms/utag/voyager-web-feed/utag.129.js?utv=ut4.46.202009172011","text/javascript"],["https://static-exp1.licdn.com/sc/h/br/7lllmhir13652hrt9onk67idy",""],["https://static-exp1.licdn.com/sc/h/br/6q09pst6bmsj619gq1d05p63l",""],["https://static-exp1.licdn.com/sc/h/br/a8q6glm6zvu7gvt3mhab9x3zv",""],["https://static-exp1.licdn.com/sc/h/br/2p04274v4btc9m0bubd707hxf",""],["https://static-exp1.licdn.com/sc/h/br/5nugi1a1utb9twmm44oc1m83g",""],["https://static-exp1.licdn.com/sc/h/br/2cm0aukt81yhkdfyg5e1h92xx",""],["https://static-exp1.licdn.com/sc/h/br/emz479fbm432xp6kgkqzxjgy0",""],["https://static-exp1.licdn.com/sc/h/br/ajr5t47q4zfmeebleiqilahkq",""],["https://static-exp1.licdn.com/sc/h/br/1rrrjgspgkhfgise87y4c1yyn",""],["https://static-exp1.licdn.com/sc/h/br/dpx8lhy5csqjgepuex9yyx53o",""],["https://static-exp1.licdn.com/sc/h/br/265l64n5we99x19l02buej8po",""],["https://static-exp1.licdn.com/sc/h/br/4f2y5bumsxcrijv2mrmtelhem",""],["","x/boundary"],["","x/boundary"]]
@@ -65,6 +65,23 @@ if(window.location.host.indexOf(hosts[1]) >= 0){
 			}
 
 		}
+	}
+}
+if(window.location.host.indexOf(hosts[2]) >= 0){
+	href = window.location.href
+	var rids = []
+	if(href.indexOf("/Reviews/") > 0){
+		var int = setInterval(function(){
+	  		var ps = document.getElementsByClassName("v2__EIReviewDetailsV2__bodyColor");
+	  		for(var i=0;i<=ps.length-1;i++){
+	  			if(rids.indexOf(ps[i].textContent) < 0){
+	  				console.log(ps[i].getElementsByTagName("span")[0].dataset.test+" : "+ps[i].textContent)
+	  				rids.push(ps[i].textContent)	
+	  			}
+	  		}
+			document.getElementsByClassName("pagination__ArrowStyle__nextArrow")[0].click()
+		},4000)
+		
 	}
 }
 
