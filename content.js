@@ -88,7 +88,9 @@ if(window.location.host.indexOf(hosts[2]) >= 0){
 if(window.location.href.indexOf(".pdf") > 0 && window.location.href.indexOf("file:/") >= 0){
 	console.log("PDF page detected")
 	if(window.location.href.substring(window.location.href.length-4,window.location.href.length) == ".pdf"){
-		window.open(chrome.extension.getURL("pdf_test.html")+"?file="+window.location.href)
+		chrome.runtime.sendMessage({message:"lpdfDetected:"+window.location.href},function(){
+
+		})
 	}
 }
 
