@@ -89,8 +89,17 @@ if(window.location.host.indexOf(hosts[2]) >= 0){
 if(window.location.host.indexOf(hosts[3]) >= 0){
 	if(window.location.href.indexOf("/wiki") > 0){
 		console.log("wiki page detected")
-		var ids = ["mw-page-base","mw-head-base","mw-data-after-content","mw-navigation","footer"];
+		var ids = ["mw-page-base","mw-head-base","mw-data-after-content","mw-navigation","footer","toc"];
 		for(id in ids){document.getElementById(ids[id]).remove();}
+		var classes = ["reference","reflist","box-Refimprove"]
+		for(c in classes){
+			var css=document.getElementsByClassName(classes[c]);
+			if(css.length > 0){
+				for(var i=0;i<=css.length-1;i++){
+					css[i].remove()
+				}
+			}
+		}
 		document.getElementById("content").style.marginLeft = "0px";
 	}
 }
