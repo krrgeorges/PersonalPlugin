@@ -41,6 +41,30 @@ $(document).ready(function(){
 			add_link($("#tab-link-input").val().trim());
 		}
 	})
+
+	$("#U2HD").click(function(){
+		var unix_timestamp = $("#epoch-n").val()
+		var date = moment.unix(unix_timestamp).format("MM/DD/YYYY HH:mm:ss")
+		$("#u2hd_res").html("<br/><b>Human Date : "+date+"</b><br/>");
+	})
+	$("#HD2U").click(function(){
+		var y = $("#hf-d1").val().toString()
+		var m = $("#hf-d2").val().toString()
+		var d = $("#hf-d3").val().toString()
+		var h = $("#hf-d4").val().toString()
+		var mi = $("#hf-d5").val().toString()
+
+		var s = $("#hf-d6").val().toString()
+		var a = $("#hf-d7").val().toString()
+		var l = $("#hf-d8").val().toString()
+		if(l == 1){
+			$("#hd2u_res").html("<br/><b>UNIX Timestamp : "+moment(moment(y+"/"+m+"/"+d+" "+h+":"+mi+":"+s+" "+a,"YYYY/MM/DD HH:mm:ss A").utc().format("YYYY/MM/DD HH:mm:ss A"),"YYYY/MM/DD HH:mm:ss A").unix().toString()+"</b><br/>");
+		}
+		else{
+			$("#hd2u_res").html("<b>UNIX Timestamp : "+moment(y+"/"+m+"/"+d+" "+h+":"+mi+":"+s+" "+a,"YYYY/MM/DD HH:mm:ss A").unix().toString()+"</b><br/><br/>");
+		}
+		
+	})
 })
 
 

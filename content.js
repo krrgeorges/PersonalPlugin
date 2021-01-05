@@ -1,6 +1,6 @@
 hosts = ["linkedin.com","github.com","glassdoor.co.in","en.wikipedia.org","mail.google.com"]
 
-mail_bans = ["talent.com","timesjobs job alert","iimjobs.com","timesjobs research","linkedin job alerts"]
+mail_bans = ["talent.com","timesjobs job alert","iimjobs.com","timesjobs research","linkedin job alerts","neuvoo.co.in","zs prize","techgig webinar"]
 
 if(window.location.host.indexOf(hosts[0]) >= 0){
 	if(window.location.href.indexOf("/feed/") >= 0){

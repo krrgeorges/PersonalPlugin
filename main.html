@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
     <script src="./jquery.min.js"></script>
     <script src="./bootstrap.min.js"></script>
+    <script src="./moment.js"></script>
     <script type="text/javascript" src="./ckeditor/ckeditor.js"></script>
     <script type="text/javascript" src="./main.js"></script>
     <style type="text/css">
@@ -45,6 +46,9 @@
             padding-right: 0px!important;
             padding-left: 0px!important;
         }
+/*        .dateform{
+            background-color: white;
+        }*/
     </style>
 
     <style type="text/css">
@@ -59,6 +63,7 @@
                 <a class="nav-item nav-link active" id="nav-daytabs-tab" data-toggle="tab" href="#nav-daytabs" role="tab" aria-controls="nav-daytabs" aria-selected="true">DayTabs</a>
                 <a class="nav-item nav-link" id="nav-notes-tab" data-toggle="tab" href="#nav-notes" role="tab" aria-controls="nav-notes" aria-selected="false">Notes</a>
                 <a class="nav-item nav-link" id="nav-colors-tab" data-toggle="tab" href="#nav-colors" role="tab" aria-controls="nav-colors" aria-selected="false">Colors</a>
+                <a class="nav-item nav-link" id="nav-epoch-tab" data-toggle="tab" href="#nav-epoch" role="tab" aria-controls="nav-epoch" aria-selected="false">Epoch</a>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent" style="margin-top: 15px;">
@@ -80,6 +85,66 @@
             <div class="tab-pane fade" id="nav-colors" role="tabpanel" aria-labelledby="nav-colors-tab">
                 
             </div>
+            <div class="tab-pane fade" id="nav-epoch" role="tabpanel" aria-labelledby="nav-epoch-tab">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <input type="number" class="form-control" name="epoch-n" id="epoch-n" placeholder="UNIX Timestamp">
+                    </div>
+                    <div class="col-lg-6">
+                        <button class="btn" id="U2HD" style="background-color:#2ECC71;">Convert to Human Date</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6" id="u2hd_res"></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table class="tool hf-table date-input">
+                            <tbody>
+                                <tr>
+                                    <td id="hf-h1">Yr</td>
+                                    <td id="hf-h2">Mon</td>
+                                    <td id="hf-h3">Day</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="hf-d1" class="dateform year" autocomplete="off" type="text" size="4" maxlength="4" value="2019" name="yyyy" aria-label="Year"><span class="datesep">-</span></td>
+                                    <td><input id="hf-d2" class="dateform month" autocomplete="off" type="text" size="2" maxlength="2" value="1" name="mm" aria-label="Month"><span class="datesep">-</span></td>
+                                    <td><input id="hf-d3" class="dateform day" autocomplete="off" type="text" size="2" maxlength="2" value="1" name="dd" aria-label="Day"><span class="datesep">&nbsp;</span></td></tr>
+                            </tbody>
+                        </table>
+                        <table class="tool hf-table time-input">
+                            <tbody>
+                                <tr>
+                                    <td>Hr</td>
+                                    <td>Min</td>
+                                    <td>Sec </td>
+                                </tr>
+                                <tr>
+                                    <td><input id="hf-d4" class="dateform" type="text" autocomplete="off" size="2" maxlength="2" value="12" name="hh" aria-label="Hours">&nbsp;:&nbsp;</td>
+                                    <td><input id="hf-d5" class="dateform" type="text" autocomplete="off" size="2" maxlength="2" value="0" name="mn" aria-label="Minutes">&nbsp;:&nbsp;</td>
+                                    <td>
+                                        <input id="hf-d6" class="dateform" type="text" autocomplete="off" size="2" maxlength="2" value="0" name="ss" aria-label="Seconds"><span class="ampm" style="">
+                                        <select id="hf-d7" name="am" aria-label="AM or PM"><option value="am" selected="">AM</option><option value="pm">PM</option></select></span>
+                                        <select id="hf-d8" name="tz" class="pref-tz" aria-label="Timezone"><option value="1">GMT</option><option value="2"  selected="">Local time</option></select>&nbsp;
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="tool hf-table">
+                            <tbody>
+                                <tr>
+                                    <td>&nbsp;<br><button id="HD2U" class="btn"  style="background-color:#2ECC71;">Human date to Timestamp</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row" style="padding-bottom: 20px;">
+                    <div class="col-lg-6" id="hd2u_res"></div>
+                </div>
+            </div>
+
         </div>
     </div>
 
