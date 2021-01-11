@@ -1,4 +1,4 @@
-hosts = ["linkedin.com","github.com","glassdoor.co.in","en.wikipedia.org","mail.google.com"]
+hosts = ["linkedin.com","github.com","glassdoor.co.in","en.wikipedia.org","mail.google.com","worldtimebuddy.com"]
 
 mail_bans = ["talent.com","timesjobs job alert","iimjobs.com","timesjobs research","linkedin job alerts","neuvoo.co.in","zs prize","techgig webinar"]
 
@@ -124,6 +124,14 @@ if(window.location.host.indexOf(hosts[4]) >= 0){
 				}
 			}
 		},5000)
+	}
+}
+
+if(window.location.host.indexOf(hosts[5]) >= 0){
+	console.log("Detected WorldTimeBuddy")
+	var ids = ["logo","social","text-wrapper","toprek"]
+	for(i in ids){
+		document.getElementById(ids[i]).remove()
 	}
 }
 
